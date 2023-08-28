@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('../src/font/Garet-Book.woff') format('woff'),
+         url('../src/font/Garet-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .container {
+    font-family: 'Garet', sans-serif;
+  }
+
+  :root {
+    --font-family: 'Garet', sans-serif;
+
+}

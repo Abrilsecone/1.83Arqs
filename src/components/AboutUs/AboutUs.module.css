@@ -1,0 +1,49 @@
+.aboutUs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  }
+
+  .teamMembers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .teamMember {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .teamMember:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .memberImage {
+    width: 180px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: .9rem;
+  }
+  
+  .teamMember h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .teamMember p {
+    font-size: 14px;
+    color: #555;
+  }
+  

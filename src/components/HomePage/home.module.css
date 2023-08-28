@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.introText {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.homeImage {
+  max-width: 45%;
+  height: auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}

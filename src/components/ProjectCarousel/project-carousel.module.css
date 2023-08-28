@@ -1,0 +1,30 @@
+.carousel {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carousel .thumbs-wrapper {
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  .carousel .carousel-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+    color: #fff0;
+
+  }
+
+  .carousel .thumb.selected, .carousel .thumb:hover {
+    border: 1px solid #333;
+}

@@ -1,0 +1,37 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  
+  .projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .projectCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .projectTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .projectDescription {
+    margin-bottom: 10px;
+  }
+  
+  .projectImage {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
