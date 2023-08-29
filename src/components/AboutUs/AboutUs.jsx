@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './AboutUs.module.css';
 import person1Image from '../../imagesHome/luliiiii.png'; 
+import person2Image from '../../imagesHome/delfii.jpg'; 
+
 
 const teamMembers = [
   {
@@ -9,8 +11,10 @@ const teamMembers = [
     image: person1Image,
   },
   {
-    name: 'Nombre Persona 2',
+    name: 'Delfina Bordoni',
     description: 'Descripción de la persona 2.',
+    image: person2Image,
+
   },
 ];
 

@@ -53,7 +53,7 @@
   flex-direction: column;
   position: absolute;
   top: 100%;
-  right: 0; /* Alinea el menú a la derecha */
+  right: 0;
   width: 100%;
   background-color: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -72,7 +72,7 @@
 }
 
 .mobileMenu a:hover {
-  color: #007bff;
+  color: #409cfe;
 }
 
 .hiddenMenu {
@@ -84,17 +84,22 @@
     display: block;
   }
 
-  .hiddenMenu {
-    display: block;
+  .mobileMenu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+    flex-direction: row-reverse;
   }
-
-  .mobileMenu {
-    display: none;
+  
+  .mobileMenu a:hover {
+    color: #409cfe;
   }
 
   .navbar {
-    flex-direction: column;
-    padding: 20px 0;
+    padding: 10px 10px;
   }
 
   .middleSection {
@@ -106,3 +111,4 @@
     max-width: 120px;
   }
 }
+
