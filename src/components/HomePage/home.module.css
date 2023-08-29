@@ -23,7 +23,9 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 45px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
   }
 
   .title {
@@ -37,6 +39,8 @@
   }
 
   .homeImage {
-    max-width: 100%;
+    max-width: 165%;
+    padding-top: 2.5rem;
+    height: auto;
   }
 }
