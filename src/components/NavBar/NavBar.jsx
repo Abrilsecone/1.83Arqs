@@ -25,7 +25,7 @@ const NavBar = () => {
           <a href="#featured" onClick={() => scrollToSection('featured')}>
             Proyectos
           </a>
-          <a href="#abaout-us" onClick={() => scrollToSection('abaout-us')}>
+          <a href="#about-us" onClick={() => scrollToSection('about-us')}>
             El equipo
           </a>
           <a href="#contact" onClick={() => scrollToSection('contact')}>

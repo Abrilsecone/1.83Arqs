@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './featured-projects.module.css';
+import { Link } from 'react-router-dom';
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 import image1 from '../../imagesHome/Ima1.png';
 import image2 from '../../imagesHome/Ima2.png';
@@ -17,6 +18,16 @@ const FeaturedProjectsPage = () => {
       description: 'Descripción del Proyecto B.',
       images: [image1, image2, image3],
     },
+    {
+      title: 'Proyecto C',
+      description: 'Descripción del Proyecto C.',
+      images: [image1, image2, image3],
+    },
+    {
+      title: 'Proyecto D',
+      description: 'Descripción del Proyecto D.',
+      images: [image1, image2, image3],
+    },
     // Agregar más proyectos según sea necesario
   ];
 
@@ -32,6 +43,9 @@ const FeaturedProjectsPage = () => {
           </div>
         ))}
       </div>
+      <Link to="/otros-proyectos" className={`${styles.moreProjectsButton} ${styles.button}`}>
+      Ver más proyectos
+      </Link>
     </div>
   );
 };

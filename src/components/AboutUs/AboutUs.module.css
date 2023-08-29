@@ -1,6 +1,6 @@
 .container {
   margin: 0 0;
-  padding: 150px;
+  padding: 200px 150px 200px 150px;
   display: flex;
   justify-content: center;
 }
@@ -63,6 +63,7 @@
 
 .memberImage {
   width: 280px; 
+  height: 350px;
   object-fit: cover;
   border-radius: 1rem;
   margin-bottom: 0.9rem;
