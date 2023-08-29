@@ -12,7 +12,7 @@ const ContactPage = () => {
         <h2>Información de Contacto</h2>
         <p>Dirección: Rivadavia 1183, Villa Constitucion.</p>
         <p>Teléfono: +54 9 341-3751131</p>
-        <p>Correo Electrónico: 1.83@arquitectos.com</p>
+        <p>Correo Electrónico: 1.83arquitectos@gmail.com</p>
       </div>
       
       <div className={styles.contactForm}>
