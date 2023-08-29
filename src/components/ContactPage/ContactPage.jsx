@@ -10,9 +10,9 @@ const ContactPage = () => {
       
       <div className={styles.contactInfo}>
         <h2>Información de Contacto</h2>
-        <p>Dirección: 123 Calle Arquitectura, Ciudad</p>
-        <p>Teléfono: +123 456 7890</p>
-        <p>Correo Electrónico: contacto@tuempresa.com</p>
+        <p>Dirección: Rivadavia 1183, Villa Constitucion.</p>
+        <p>Teléfono: +54 9 341-3751131</p>
+        <p>Correo Electrónico: 1.83@arquitectos.com</p>
       </div>
       
       <div className={styles.contactForm}>
