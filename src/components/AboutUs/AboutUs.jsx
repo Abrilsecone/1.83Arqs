@@ -1,4 +1,3 @@
-
 import React from 'react';
 import styles from './AboutUs.module.css';
 import person1Image from '../../imagesHome/luliiiii.png'; 
@@ -13,23 +12,30 @@ const teamMembers = [
     name: 'Nombre Persona 2',
     description: 'Descripción de la persona 2.',
   },
-  // Puedes agregar más miembros del equipo aquí
 ];
 
 const AboutUs = () => {
   return (
-    <section className={styles.aboutUs}>
-      <h1 className={styles.title}></h1>
-      <div className={styles.teamMembers}>
-        {teamMembers.map((member, index) => (
-          <div key={index} className={styles.teamMember}>
-            <img src={member.image} alt={member.name} className={styles.memberImage} />
-            <h3>{member.name}</h3>
-            <p>{member.description}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+    <div className={styles.container}>
+      <section className={styles.aboutUs}>
+        <h1 className={styles.title}></h1>
+        <div className={styles.teamMembers}>
+          {teamMembers.map((member, index) => (
+            <div key={index} className={`${styles.teamMember} ${styles.flipCard}`}>
+              <div className={styles.flipCardInner}>
+                <div className={styles.flipCardFront}>
+                  <img src={member.image} alt={member.name} className={styles.memberImage} />
+                </div>
+                <div className={styles.flipCardBack}>
+                  <p>{member.description}</p>
+                  <h3 className={styles.memberName}>{member.name}</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

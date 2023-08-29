@@ -21,6 +21,7 @@
 }
 
 
+
 @media (max-width: 768px) {
   .container {
     padding: 0px;
@@ -39,7 +40,7 @@
   }
 
   .homeImage {
-    max-width: 165%;
+    max-width: 100%;
     padding-top: 2.5rem;
     height: auto;
   }

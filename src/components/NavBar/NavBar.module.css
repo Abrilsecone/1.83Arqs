@@ -1,51 +1,108 @@
 .navbar {
-    background-color: #ffffff;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .leftSection {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-  }
-  
-  .middleSection {
-    flex: 1;
-  }
-  
-  .rightSection {
-    display: flex;
-    align-items: center;
-  }
-  
-  .socialIcon {
-    font-size: 24px;
-    color: rgb(18, 18, 18);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .socialIcon:hover {
-    color: #0d9dce;
-  }
-  
-  .logo {
-    max-width: 160px;
-  }
-  
+  background-color: #ffffff;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  flex-direction: row-reverse;
+}
+
+.leftSection {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+}
+
+.socialIcon {
+  font-size: 24px;
+  color: rgb(18, 18, 18);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #0d9dce;
+}
+
+.logo {
+  max-width: 160px;
+}
+
+.menuIcon {
+  font-size: 24px;
+  color: rgb(18, 18, 18);
+  cursor: pointer;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0; /* Alinea el menú a la derecha */
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+}
+
+.mobileMenu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  flex-direction: row-reverse;
+}
+
+.mobileMenu a:hover {
+  color: #007bff;
+}
+
+.hiddenMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
   .menuIcon {
-    font-size: 24px;
-    color: rgb(18, 18, 18);
-    cursor: pointer;
+    display: block;
   }
-  
+
+  .hiddenMenu {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .middleSection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    max-width: 120px;
+  }
+}
