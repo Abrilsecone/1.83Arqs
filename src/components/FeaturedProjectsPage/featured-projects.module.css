@@ -39,9 +39,9 @@
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    background-color: #87939f00;
+    color: #5d5d5d;
+    border: 1px solid gray;
     border-radius: 4px;
     font-size: 16px;
     text-align: center;
@@ -51,5 +51,6 @@
   }
   
   .moreProjectsButton:hover {
-    background-color: #419cfd;
+    background-color: #a5a5a5;
+    color: aliceblue;
   }
