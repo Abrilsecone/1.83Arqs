@@ -28,6 +28,9 @@ const App = () => {
 // Componente para agrupar las páginas featured, about-us, contact y homepage
 const FeatureAboutContact = () => (
   <>
+    <div id="home">
+      <HomePage />
+    </div>
     <div id="featured">
       <FeaturedProjects />
     </div>
@@ -36,9 +39,6 @@ const FeatureAboutContact = () => (
     </div>
     <div id="contact">
       <ContactSection />
-    </div>
-    <div id="home">
-      <HomePage />
     </div>
   </>
 );

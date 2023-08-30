@@ -35,7 +35,7 @@ const NavBar = () => {
         <FaBars className={styles.menuIcon} onClick={toggleMenu} />
       </div>
       <div className={styles.middleSection}>
-        <a href="#home">
+        <a href="/">
           <img src={logoImage} alt="Logo" className={styles.logo} />
         </a>
       </div>
