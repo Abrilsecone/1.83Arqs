@@ -36,16 +36,22 @@
   }
   
   .submitButton {
-    background-color: #8ac2ff;
-    color: white;
-    border: none;
+    display: block;
+    margin-top: 20px;
     padding: 10px 20px;
+    background-color: #87939f00;
+    color: #5d5d5d;
+    border: 1px solid gray;
     border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
   }
   
   .submitButton:hover {
-    background-color: #74b7ff;
+    background-color: #a5a5a5;
+    color: aliceblue;
   }
   
