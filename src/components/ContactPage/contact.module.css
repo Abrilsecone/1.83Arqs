@@ -15,6 +15,9 @@
   
   .contactForm {
     margin-top: 30px;
+    border: 1px solid #000;
+    border-radius: .5em;
+    background-color: #ccc;
   }
   
   .formGroup {
@@ -25,22 +28,25 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    margin-left: 5px;
   }
   
   input,
   textarea {
-    width: 100%;
+    width: 95%;
+    height: 95%;
     padding: 10px;
-    border: 1px solid #ccc;
+    margin-left: 5px;
+    border: 1px solid #000;
     border-radius: 4px;
   }
   
   .submitButton {
     display: block;
-    margin-top: 20px;
+    margin-left: 2px;
     padding: 10px 20px;
-    background-color: #87939f00;
-    color: #5d5d5d;
+    background-color: #18791dde;
+    color: #e6e3e3;
     border: 1px solid gray;
     border-radius: 4px;
     font-size: 16px;
