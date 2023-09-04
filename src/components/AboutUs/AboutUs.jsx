@@ -7,12 +7,12 @@ import person2Image from '../../imagesHome/delfii.jpg';
 const teamMembers = [
   {
     name: 'Luciano Gimenez Bonaccorsi',
-    description: 'Un arquitecto joven de 34 años es un profesional apasionado y creativo en el campo de la arquitectura. Con una mezcla de energía juvenil y experiencia, se destaca por su enfoque innovador en el diseño y la resolución de problemas.',
+    description: "Arquitecto de 34 años, un profesional apasionado y altamente creativo en el ámbito de la arquitectura. Combina una energía juvenil con una valiosa experiencia en su campo. Su distinción radica en su enfoque innovador para el diseño y su habilidad para resolver problemas de manera eficaz y original.",
     image: person1Image,
   },
   {
     name: 'Delfina Bordoni',
-    description: 'Descripción de la persona 2.',
+    description: 'Arquitecta de 28 años, una profesional apasionada y altamente creativa en el campo de la arquitectura. Combina una energía juvenil con una valiosa experiencia en su campo. Su distinción radica en su enfoque innovador para el diseño y su habilidad para resolver problemas de manera eficaz y original. Su perspectiva única y su compromiso con la excelencia hacen de ella una líder destacada en la industria de la arquitectura',
     image: person2Image,
 
   },
