@@ -6,13 +6,13 @@ import person2Image from '../../imagesHome/delfii.jpg';
 
 const teamMembers = [
   {
-    name: 'Luciano Gimenez Bonaccorsi',
-    description: 'Un arquitecto joven de 34 años es un profesional apasionado y creativo en el campo de la arquitectura. Con una mezcla de energía juvenil y experiencia, se destaca por su enfoque innovador en el diseño y la resolución de problemas.',
+    name: 'Luciano Bonaccorsi',
+    description: 'Un profesional apasionado y creativo en el campo de la arquitectura. Con una mezcla de energía juvenil y experiencia, se destaca por su enfoque innovador en el diseño y la resolución de problemas.',
     image: person1Image,
   },
   {
     name: 'Delfina Bordoni',
-    description: 'Descripción de la persona 2.',
+    description: "Una arquitecta talentosa y comprometida, conocida por su enfoque creativo y su habilidad para abordar proyectos con soluciones innovadoras y prácticas.",
     image: person2Image,
 
   },
@@ -25,14 +25,14 @@ const AboutUs = () => {
         <h1 className={styles.title}></h1>
         <div className={styles.teamMembers}>
           {teamMembers.map((member, index) => (
-            <div key={index} className={`${styles.teamMember} ${styles.flipCard}`}>
+            <div key={index} className={`${styles.teamMember} ${styles[`teamMember${index}`]} ${styles.flipCard}`}>
               <div className={styles.flipCardInner}>
                 <div className={styles.flipCardFront}>
                   <img src={member.image} alt={member.name} className={styles.memberImage} />
+                  <h3 className={styles.memberName}>{member.name}</h3>
                 </div>
                 <div className={styles.flipCardBack}>
                   <p>{member.description}</p>
-                  <h3 className={styles.memberName}>{member.name}</h3>
                 </div>
               </div>
             </div>
@@ -42,5 +42,7 @@ const AboutUs = () => {
     </div>
   );
 };
+
+
 
 export default AboutUs;
