@@ -17,7 +17,7 @@ const ContactPage = () => {
       
       <div className={styles.contactForm}>
         <h2>Formulario de Contacto</h2>
-        <form>
+        <form action="https://formsubmit.co/1.83arquitectos@gmail.com" method="POST">
           <div className={styles.formGroup}>
             <label htmlFor="name">Nombre:</label>
             <input type="text" id="name" name="name" required />
