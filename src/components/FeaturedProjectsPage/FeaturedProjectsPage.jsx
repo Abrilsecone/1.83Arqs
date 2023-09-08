@@ -5,6 +5,15 @@ import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
 import image1 from '../../imagesHome/Ima1.png';
 import image2 from '../../imagesHome/Ima2.png';
 import image3 from '../../imagesHome/Ima3.png';
+import image4 from '../../imagesHome/Ima4.png';
+import image5 from '../../imagesHome/Ima5.png';
+import image6 from '../../imagesHome/Ima6.png';
+import image7 from '../../imagesHome/Ima7.png';
+import image8 from '../../imagesHome/Ima8.png';
+import image9 from '../../imagesHome/Ima9.png';
+import image10 from '../../imagesHome/Ima10.png';
+import image11 from '../../imagesHome/Ima11.png';
+import image12 from '../../imagesHome/Ima12.png';
 
 const FeaturedProjectsPage = () => {
   const projects = [
@@ -14,19 +23,19 @@ const FeaturedProjectsPage = () => {
       images: [image1, image2, image3],
     },
     {
-      title: 'Proyecto B',
-      description: 'Descripción del Proyecto B.',
-      images: [image1, image2, image3],
+      title: 'Ampliación Juan',
+      description: 'Esta casa experimentó una reforma de ladrillo que mejoró tanto su apariencia como su durabilidad. Los ladrillos originales fueron restaurados o reemplazados según fuera necesario, lo que le dio un aspecto fresco y renovado.El resultado es una casa con un exterior de ladrillo revitalizado y atractivo..',
+      images: [image4, image5, image6],
     },
     {
-      title: 'Proyecto C',
-      description: 'Descripción del Proyecto C.',
-      images: [image1, image2, image3],
+      title: 'Fun Place',
+      description: 'La remodelación de este local comercial transformó su aspecto tanto en el interior como en el exterior. Se adoptó un diseño moderno y funcional, con una distribución mejorada para un flujo de clientes más eficiente. Se utilizaron materiales y acabados de alta calidad para lograr un aspecto pulido y se incorporaron tecnologías avanzadas para mejorar la experiencia del cliente.',
+      images: [image7, image8, image9],
     },
     {
-      title: 'Proyecto D',
-      description: 'Descripción del Proyecto D.',
-      images: [image1, image2, image3],
+      title: 'Oficina JS',
+      description: 'La remodelación de esta oficina modernizó su diseño, mejoró la eficiencia del espacio y creó un entorno de trabajo más cómodo. Se incorporaron elementos contemporáneos y se utilizaron colores y materiales que fomentan la productividad y el bienestar de los empleados. La renovación también incluyó la actualización de sistemas tecnológicos para un funcionamiento más eficiente..',
+      images: [image10, image11, image12],
     },
     // Agregar más proyectos según sea necesario
   ];
@@ -43,11 +52,14 @@ const FeaturedProjectsPage = () => {
           </div>
         ))}
       </div>
-      <Link to="/otros-proyectos" className={`${styles.moreProjectsButton} ${styles.button}`}>
-      Ver más proyectos
-      </Link>
+
     </div>
   );
 };
 
 export default FeaturedProjectsPage;
+
+
+/*     <Link to="/otros-proyectos" className={`${styles.moreProjectsButton} ${styles.button}`}>
+Ver más proyectos
+</Link>*/
