@@ -8,6 +8,11 @@
     max-width: 100%;
     height: auto;
   }
+
+  .swiper-button-next:after{
+    content: 'next';
+    font-size: large;  
+  }
   
   .carousel .thumbs-wrapper {
     margin: 0px;
@@ -16,15 +21,20 @@
 
   .carousel .carousel-status {
     position: absolute;
-    top: 0;
+    top: 1rem;
     right: 0;
     padding: 5px;
     font-size: 10px;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
-    color: #fff0;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
 
   }
 
   .carousel .thumb.selected, .carousel .thumb:hover {
     border: 1px solid #333;
+}
+
+
+:root{ --swiper-theme-color:white !important;
+  --swiper-navigation-size: 15px;
 }

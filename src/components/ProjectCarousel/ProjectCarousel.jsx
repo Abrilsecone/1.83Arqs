@@ -1,17 +1,29 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 import styles from './project-carousel.module.css';
-
 const ProjectCarousel = ({ images }) => {
   return (
-    <Carousel className={styles.carousel}>
+    <Swiper
+      className={styles.carousel}
+      slidesPerView={1}
+      spaceBetween={30}
+      loop={true}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Pagination, Navigation]}
+    >
       {images.map((image, index) => (
-        <div key={index}>
+        <SwiperSlide key={index}>
           <img src={image} alt={`Slide ${index}`} />
-        </div>
+        </SwiperSlide>
       ))}
-    </Carousel>
+    </Swiper>
   );
 };
 
