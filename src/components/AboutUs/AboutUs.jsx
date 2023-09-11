@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './AboutUs.module.css';
 import person1Image from '../../imagesHome/luliiiii.png'; 
-import person2Image from '../../imagesHome/delfii.jpg'; 
+import person2Image from '../../imagesHome/person2Image.png'; 
 
 
 const teamMembers = [
