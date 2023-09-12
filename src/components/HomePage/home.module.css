@@ -15,7 +15,7 @@
 }
 
 .homeImage {
-  max-width: 45%;
+  max-width: 25%;
   height: auto;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -25,7 +25,7 @@
 @media (max-width: 768px) {
   .container {
     text-align: center;
-    padding-top: 3.5rem;
+    padding-top: 1.5rem;
     max-width: 100%;
     background-size: cover;
   }
@@ -41,8 +41,7 @@
   }
 
   .homeImage {
-    max-width: 500px;
-    min-height: 650px;
+    max-width: 420px;
     height: auto;
     background-size: cover;
     z-index: 0;
