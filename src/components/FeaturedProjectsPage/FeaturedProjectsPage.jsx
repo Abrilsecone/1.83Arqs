@@ -48,11 +48,12 @@ const FeaturedProjectsPage = () => {
           <div key={index} className={styles.projectCard}>
             <ProjectCarousel images={project.images} />
             <h2 className={styles.projectTitle}>{project.title}</h2>
-            <p className={styles.projectDescription}>{project.description}</p>
+            <div className={styles.projectDescriptionContainer}>
+              <p className={styles.projectDescription}>{project.description}</p>
+            </div>
           </div>
         ))}
       </div>
-
     </div>
   );
 };

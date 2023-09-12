@@ -1,43 +1,30 @@
-import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import React from 'react';
+import { Link, useMatch } from 'react-router-dom'; 
 import styles from './NavBar.module.css';
 import logoImage from '../../images/logoArqNegroL.png';
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false); 
-    }
-  };
+  const isFeaturedActive = useMatch('/featured');
+  const isAboutUsActive = useMatch('/about-us');
+  const isContactActive = useMatch('/contact');
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.leftSection}>
-        <div className={isMenuOpen ? styles.mobileMenu : styles.hiddenMenu}>
-          <a href="#featured" onClick={() => scrollToSection('featured')}>
-            Proyectos
-          </a>
-          <a href="#about-us" onClick={() => scrollToSection('about-us')}>
-            El equipo
-          </a>
-          <a href="#contact" onClick={() => scrollToSection('contact')}>
-            Contacto
-          </a>
-        </div>
-        <FaBars className={styles.menuIcon} onClick={toggleMenu} />
+        <Link to="/featured" className={`${styles.navLink} ${isFeaturedActive ? styles.activeNavLink : ''}`}>
+          Proyectos
+        </Link>
+        <Link to="/about-us" className={`${styles.navLink} ${isAboutUsActive ? styles.activeNavLink : ''}`}>
+          El equipo
+        </Link>
+        <Link to="/contact" className={`${styles.navLink} ${isContactActive ? styles.activeNavLink : ''}`}>
+          Contacto
+        </Link>
       </div>
       <div className={styles.middleSection}>
-        <a href="/">
+        <Link to="/">
           <img src={logoImage} alt="Logo" className={styles.logo} />
-        </a>
+        </Link>
       </div>
     </nav>
   );

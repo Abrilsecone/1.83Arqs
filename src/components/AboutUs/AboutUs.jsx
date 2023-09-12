@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './AboutUs.module.css';
 import person1Image from '../../imagesHome/luliiiii.png'; 
 import person2Image from '../../imagesHome/person2Image.png'; 
-
+import { useInView } from 'react-intersection-observer';
 
 const teamMembers = [
   {
@@ -14,14 +14,24 @@ const teamMembers = [
     name: 'Delfina Bordoni',
     description: "Una arquitecta talentosa y comprometida, conocida por su enfoque creativo y su habilidad para abordar proyectos con soluciones innovadoras y prácticas.",
     image: person2Image,
-
   },
 ];
 
 const AboutUs = () => {
+  const [isAboutUsVisible, setAboutUsVisible] = useState(false);
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setAboutUsVisible(true);
+    }
+  }, [inView]);
+
   return (
     <div className={styles.container}>
-      <section className={styles.aboutUs}>
+      <section className={`${styles.aboutUs} ${isAboutUsVisible ? styles.visible : ''}`} ref={ref}>
         <h1 className={styles.title}></h1>
         <div className={styles.teamMembers}>
           {teamMembers.map((member, index) => (
@@ -42,7 +52,5 @@ const AboutUs = () => {
     </div>
   );
 };
-
-
 
 export default AboutUs;

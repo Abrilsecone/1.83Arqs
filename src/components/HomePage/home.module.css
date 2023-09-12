@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  padding: 40px;
+  padding: 20px 0px 0px 0px;
 }
 
 .title {
@@ -25,11 +25,9 @@
 @media (max-width: 768px) {
   .container {
     text-align: center;
-    padding-top: 41rem;
-    background-image: url(/src/images/Ima1resp.png);
+    padding-top: 3.5rem;
     max-width: 100%;
     background-size: cover;
-    background-position: center;
   }
 
   .title {
@@ -43,8 +41,13 @@
   }
 
   .homeImage {
-    max-width: 0%;
-    padding-top: 2.5rem;
+    max-width: 500px;
+    min-height: 650px;
     height: auto;
+    background-size: cover;
+    z-index: 0;
+    background-position: center;
+
+
   }
 }

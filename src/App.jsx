@@ -14,33 +14,17 @@ const App = () => {
     <Router>
       <div className="landing-page">
         <NavBar />
-      <Routes>
-        <Route path="/" element={<FeatureAboutContact />} />
-        <Route path="/otros-proyectos" element={<OtherProjects />} />
-        <Route path="*" element={<HomePage />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/featured" element={<FeaturedProjects />} />
+          <Route path="/contact" element={<ContactSection />} />
+          <Route path="/other-projects" element={<OtherProjects />} />
+          <Route path="/about-us" element={<AboutUs />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
   );
 };
-
-// Componente para agrupar las páginas featured, about-us, contact y homepage
-const FeatureAboutContact = () => (
-  <>
-    <div id="home">
-      <HomePage />
-    </div>
-    <div id="featured">
-      <FeaturedProjects />
-    </div>
-    <div id="about-us">
-      <AboutUs />
-    </div>
-    <div id="contact">
-      <ContactSection />
-    </div>
-  </>
-);
 
 export default App;
