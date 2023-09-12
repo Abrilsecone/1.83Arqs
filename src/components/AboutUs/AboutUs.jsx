@@ -31,7 +31,7 @@ const AboutUs = () => {
 
   return (
     <div className={styles.container}>
-      <section className={`${styles.aboutUs} ${isAboutUsVisible ? styles.visible : ''}`} ref={ref}>
+      <section className={`${styles.aboutUs} ${isAboutUsVisible ? styles.visible : ''} ${styles.customSectionStyles}`} ref={ref}>
         <h1 className={styles.title}></h1>
         <div className={styles.teamMembers}>
           {teamMembers.map((member, index) => (
