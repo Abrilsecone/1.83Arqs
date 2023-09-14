@@ -106,14 +106,14 @@
   }
 
   .teamMember0 {
-    width: 200px;
+    width: 180px;
     padding-right: 0rem;
     margin: 0;
 
   }
 
   .teamMember1 {
-    width: 200px;
+    width: 150px;
     padding-right: 0px;
     margin: 0;
 
@@ -128,7 +128,7 @@
   }
 
   .memberName {
-    font-size: 14px;
+    font-size: 15px;
     bottom: 3rem;
     padding: 0px 0px;
 
